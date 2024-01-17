@@ -1,0 +1,32 @@
+[
+  {
+    "id": "a7480ef1-3758-4326-9246-2b5259ef4c8a",
+    "name": "12",
+    "email": "123",
+    "password": "123"
+  },
+  {
+    "id": "4e5c2be1-99e9-4f99-97a8-7e54ce62cd3e",
+    "name": "135315",
+    "email": "123312132",
+    "password": "123321"
+  },
+  {
+    "id": "42b818c4-7048-4329-b64d-79e3c1437548",
+    "name": "",
+    "email": "",
+    "password": ""
+  },
+  {
+    "id": "5ff8ec77-9f31-4f8a-b5ee-48ad38e31ead",
+    "name": "76564526537674",
+    "email": "admin",
+    "password": "admin"
+  },
+  {
+    "id": "9f99f844-7a44-4fe8-a0b0-8733f32a0069",
+    "name": "12345",
+    "email": "12345",
+    "password": "12345"
+  }
+]

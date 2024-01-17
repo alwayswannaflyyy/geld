@@ -1,0 +1,22 @@
+[
+  {
+    "amount": "1341",
+    "date": "2024-01-04",
+    "isExpense": false,
+    "selectedCategory": "5424523",
+    "time": "14:54",
+    "IconColor": "#41CC00",
+    "selectedIcon": "GrAccessibility",
+    "userEmail": ""
+  },
+  {
+    "amount": "12414",
+    "date": "2024-01-11",
+    "isExpense": true,
+    "selectedCategory": "fdsafd",
+    "time": "14:54",
+    "IconColor": "#F9D100",
+    "selectedIcon": "GrAdd",
+    "userEmail": ""
+  }
+]
