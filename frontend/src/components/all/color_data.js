@@ -12,12 +12,12 @@ export const ColorData = [
     color: "#F9D100",
   },
   {
-    color: "#FF7B01",
+    color: "#FF0000",
   },
   {
-    color: "#AE01FF",
+    color: "#FFC0CB",
   },
-  {
-    color: "#FF0101",
-  },
+  // {
+  //   color: "#FF0101",
+  // },
 ];

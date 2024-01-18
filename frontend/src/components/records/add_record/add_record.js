@@ -16,6 +16,7 @@ export default function AddRecord() {
   const [openCategory, setOpenCategory] = useState(false);
   const [selectedIconRecord, setSelectedIconRecord] =
     useState("GrAccessibility");
+    
   const [RecordColor, setRecordColor] = useState("#000");
   const [selectedCategory, setSelectedCategory] = useState();
   const Icon = icons[selectedIconRecord];
@@ -25,6 +26,7 @@ export default function AddRecord() {
         <header className="w-full h-[68px] flex items-center px-[20px] justify-between">
           <h1 className="text-[20px] font-[600]">Add Record</h1>
           <Image
+           className="cursor-pointer"
             src="/esc.svg"
             width={24}
             alt="Picture of the author"
@@ -53,7 +55,7 @@ export default function AddRecord() {
               <button
                 className="w-full h-full rounded-[20px]"
                 style={{
-                  background: !isExpense ? "#0166FF" : "#F3F4F6",
+                  background: !isExpense ?"#16A34A" : "#F3F4F6",
                   color: !isExpense ? "#fff" : "#000",
                 }}
                 onClick={(e) => {
@@ -83,7 +85,7 @@ export default function AddRecord() {
                 ></ShowCategoryOfAddRecord>
               )}
             </div>
-            <div className="flex flex-col gap-[8px]">
+            <div className="flex flex-col gap-[8px] cursor-pointer">
               <p>Category</p>
               <div
                 className="w-full rounded-lg h-[48px] flex flex-row items-center px-[16px] bg-red-50 justify-between"
@@ -103,7 +105,7 @@ export default function AddRecord() {
               </div>
             </div>
             <div className="w-full h-fit flex flex-row gap-[12px]">
-              <div className="w-full flex flex-col gap-[8px]">
+              <div className="w-full flex flex-col gap-[8px] cursor-pointer">
                 <p>Date</p>
                 <input
                   type="date"
@@ -113,7 +115,7 @@ export default function AddRecord() {
                   }}
                 ></input>
               </div>
-              <div className="w-full flex flex-col gap-[8px]">
+              <div className="w-full flex flex-col gap-[8px] cursor-pointer">
                 <p>Time</p>
                 <input
                   type="time"
@@ -126,7 +128,11 @@ export default function AddRecord() {
             </div>
             <input
               type="submit"
-              className="bg-[#0166FF] rounded-[20px] w-full text-white h-[40px]"
+              className="bg-[#0166FF] rounded-[20px] w-full cursor-pointer text-white h-[40px]"
+              style={{
+                background: !isExpense ?"#16A34A" : "#0166FF",
+                color: !isExpense ? "#fff" : "#fff",
+              }}
               onClick={() => {
                 addRecord_(
                   amount,

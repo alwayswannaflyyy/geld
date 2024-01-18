@@ -6,21 +6,21 @@ export default function LastRecords() {
   return (
     <div className="flex flex-col w-full h-fit rounded-[12px] bg-white">
       <header className="flex flex-row w-full h-[56px] items-center px-[24px]">
-        <h1>Last Records</h1>
+        <h1 className="text-slate-900 text-base font-semibold font-['Roboto'] leading-normal">Last Records</h1>
       </header>
       <hr></hr>
-      <main className="w-full h-[400px] flex flex-col overflow-y-auto bg-scroll px-6">
+      <main className="w-full h-[250px] flex flex-col overflow-scroll	 px-6">
         {isReadyRecord &&
           recordData.map((record, index) => {
             const Icon = icons[record.selectedIcon];
             const Color = record.IconColor;
             const number = new Intl.NumberFormat("de-DE", {
               style: "currency",
-              currency: "EUR",
+              currency: "Eur",
             }).format(record.amount);
             return (
               <div
-                className="flex flex-row w-full py-[20px] h-[80px] items-center justify-between"
+                className="flex flex-row w-full  border-b border-gray-200  py-[20px] h-[80px] items-center justify-between"
                 key={index}
               >
                 <div className="w-fit h-fit flex gap-4">

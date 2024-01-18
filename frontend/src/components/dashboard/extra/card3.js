@@ -10,15 +10,15 @@ export default function Card2() {
         <h2>Your Expense</h2>
       </header>
       <hr></hr>
-      <footer className="w-full p-[24px] h-full ">
-        <main className="flex flex-col ">
-          <h1>
+      <footer className="w-full p-[24px] flex flex-col gap-5 h-full ">
+        <main className="flex flex-col gap-3">
+          <h1 className="text-3xl">
             {isReadyRecord &&
               recordData
                 .filter((record) => record.isExpense === true)
                 .reduce((a, b) => a + Number(b.amount), 0)}
           </h1>
-          <p>Your Expense Amount</p>
+          <p className="text-slate-500 text-lg font-normal font-['Roboto'] leading-7">Your Expense Amount</p>
         </main>
         <div className="flex flex-row ">
           <Image

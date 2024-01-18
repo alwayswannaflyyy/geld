@@ -23,10 +23,10 @@ export default function IsIconsOpen(props) {
       </header>
       <hr></hr>
       <footer className="w-full h-[72px] py-6">
-        <div className="flex flex-row w-full h-full items-center justify-between">
+        <div className="flex flex-row w-full h-full items-center justify-center gap-[24px]">
           {ColorData.map((span, index) => (
             <span
-              className="w-6 h-6 rounded-full"
+              className="w-5 h-5 rounded-full"
               key={index}
               style={{ backgroundColor: `${span.color}` }}
               onClick={() => {

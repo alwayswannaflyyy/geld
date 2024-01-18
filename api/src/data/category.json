@@ -1,32 +1,3 @@
 [
-  {
-    "categoryName": "5123",
-    "IconColor": "#F9D100",
-    "selectedIcon": "GrAddCircle",
-    "userEmail": ""
-  },
-  {
-    "categoryName": "5424523",
-    "IconColor": "#F9D100",
-    "selectedIcon": "GrAndroid",
-    "userEmail": ""
-  },
-  {
-    "categoryName": "tewffewfdv",
-    "IconColor": "#41CC00",
-    "selectedIcon": "GrAlarm",
-    "userEmail": ""
-  },
-  {
-    "categoryName": "fdsfs",
-    "IconColor": "#41CC00",
-    "selectedIcon": "GrAccessibility",
-    "userEmail": ""
-  },
-  {
-    "categoryName": "fdsafd",
-    "IconColor": "#F9D100",
-    "selectedIcon": "GrAdd",
-    "userEmail": ""
-  }
+  
 ]

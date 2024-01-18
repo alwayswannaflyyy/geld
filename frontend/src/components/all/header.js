@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useContext } from "react";
 import { useAuth } from "../provider/AuthProvider";
+import Profile from "./profile";
 const menus = ["dashboard", "records"];
 
 export default function Header() {
@@ -13,7 +14,7 @@ export default function Header() {
   return (
     <section className="flex flex-row w-full py-[16px] bg-white">
       <div className="w-[1200px] h-[40px] m-auto flex flex-row justify-between items-center">
-        <div className="flex flex-row items-center gap-[8px] justify-between">
+        <div className="flex flex-row items-center gap-[30px] justify-between ">
           <img src="/logo.svg" className="w-[40px] h-[40px]"></img>
           {menus.map((menu, index) => (
             <Link key={index} href={`/${menu}`}>
@@ -35,16 +36,7 @@ export default function Header() {
           >
             + Record
           </button>
-          <div
-            className="avatar"
-            onClick={() => {
-              signOut();
-            }}
-          >
-            <div className="w-[40px] rounded-full">
-              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-            </div>
-          </div>
+        <Profile/>
         </div>
       </div>
     </section>
