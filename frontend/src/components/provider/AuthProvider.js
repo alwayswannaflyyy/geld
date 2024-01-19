@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [categoryData, setCategoryData] = useState();
   const [recordData, setRecordData] = useState();
-  const [refresh, useRefresh] = useState(1);
+  const [refresh, setRefresh] = useState(1);
   const [days, setDays] = useState(90);
 
   const router = useRouter();
@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
 
       setIsLoggedIn(true);
 
-      useRefresh(refresh + 1);
+      setRefresh(refresh + 1);
 
       router.push("/dashboard");
       // showOn();
@@ -64,7 +64,7 @@ export const AuthProvider = ({ children }) => {
 
       setIsLoggedIn(true);
 
-      useRefresh(refresh + 1);
+      setRefresh(refresh + 1);
 
       router.push("/dashboard");
       // showOn();
@@ -98,7 +98,7 @@ export const AuthProvider = ({ children }) => {
           },
         }
       );
-      useRefresh(refresh + 1);
+      setRefresh(refresh + 1);
     } catch (err) {
       console.log(err);
     }
@@ -131,7 +131,7 @@ export const AuthProvider = ({ children }) => {
           },
         }
       );
-      useRefresh(refresh + 1);
+      setRefresh(refresh + 1);
     } catch (err) {
       console.log(err);
     }
@@ -190,7 +190,7 @@ export const AuthProvider = ({ children }) => {
     if (days == 90) {
       setDays(7);
     }
-    useRefresh(refresh + 1);
+    setRefresh(refresh + 1);
   };
 
   useEffect(() => {

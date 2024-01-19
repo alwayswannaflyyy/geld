@@ -63,7 +63,7 @@ export default function Login() {
         ></input>
       </div>
       <div className="w-full h-fit text-center flex flex-row justify-center gap-3">
-        Don't have account? 
+        Don&apos;t have account? 
         <Link href="/signup">
           <div className="text-blue-500">
           Sign up
