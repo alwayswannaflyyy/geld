@@ -5,9 +5,9 @@ export default function Card1() {
   const { isReadyRecord, recordData } = useAuth();
   return (
     <span className="w-[384px] h-[216px] p-[32px] flex flex-col rounded-[18px] justify-between bg-white">
-      <div class="w-96 h-[216px] left-[322px] top-[116px] absolute bg-blue-600 rounded-[18px]"></div>
+      <div class="w-96 h-[216px] left-[222px] top-[116px] absolute bg-blue-600 rounded-[18px]"></div>
       <img src="/logo_geld.png " className="w-[80px] h-[30px]"></img>
-      <div class="origin-top-left rotate-[-40.19deg] opacity-50 w-[212.63px] h-[189px] left-[360px] top-[308.20px] absolute">
+      <div class="origin-top-left rotate-[-40.19deg] opacity-50 w-[212.63px] h-[189px] left-[260px] top-[308.20px] absolute">
         <div class="w-[212.63px] h-[106.31px] left-0 top-0 absolute origin-top-left rotate-[-40.19deg] rounded-full border border-white"></div>
         <div class="w-[212.63px] h-[106.31px] left-[3.81px] top-[4.51px] absolute origin-top-left rotate-[-40.19deg] rounded-full border border-white"></div>
         <div class="w-[212.63px] h-[106.31px] left-[7.62px] top-[9.02px] absolute origin-top-left rotate-[-40.19deg] rounded-full border border-white"></div>
